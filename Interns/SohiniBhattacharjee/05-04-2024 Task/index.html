@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sale-container">
+            <div class="sale-text">Flash Sale!</div>
+            <div class="countdown">
+                <div class="digit days"></div>
+                <div class="digit hours"></div>
+                <div class="digit minutes"></div>
+                <div class="digit seconds"></div>
+            </div>
+            
+            <div class="text">Hurry Up!</div>
+        </div>
+    </div>
+
+    <script>
+        // Set the date
+        const countdownDate = new Date().getTime() + (27 * 24 * 60 * 60 * 1000);
+
+        // Update the countdown every second
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            const daysElement = document.querySelector('.digit.days');
+            daysElement.textContent = days + " Days";
+            const hoursElement = document.querySelector('.digit.hours');
+            hoursElement.textContent = hours + " Hours";
+            const minutesElement = document.querySelector('.digit.minutes');
+            minutesElement.textContent = minutes + " Minutes";
+            const secondsElement = document.querySelector('.digit.seconds');
+            secondsElement.textContent = seconds + " Second";
+
+        }, 1000);
+    </script>
+</body>
+</html>
