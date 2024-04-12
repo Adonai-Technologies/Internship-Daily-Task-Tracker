@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #212129;
+            color: #fff;
+        }
+        .center {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #clock {
+            font-size: 40px;
+            background-color: orange;
+            padding: 30px 50px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        #banner span {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Digital Clock !</h1>
+        <div id="banner"><span>Your Local Time and Date</span></div>
+        <div id="clock"></div>
+    </div>
+    <script>
+        // Get the clock element
+        const clock = document.getElementById('clock');
+
+        // Function to update the clock every second
+        setInterval(function(){
+            // Create a new Date object
+            let date = new Date();
+
+            // Get local time in the format HH:MM:SS
+            let time = date.toLocaleTimeString();
+
+            // Get local date in the format DD/MM/YYYY
+            let options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+            let localDate = date.toLocaleDateString(undefined, options);
+
+            // Update the clock HTML with both time and date
+            clock.innerHTML = time + '<br>' + localDate;
+        }, 1000);
+    </script>
+</body>
+</html>
