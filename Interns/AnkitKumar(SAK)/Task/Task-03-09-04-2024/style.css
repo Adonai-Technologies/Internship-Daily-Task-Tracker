@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body{
+    background-color: black;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+nav h1{
+    font-size: 2rem;
+}
+nav div{
+    display: flex;
+    gap:1rem;
+    font-size: 1.5rem;
+}
+.icon{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .icon{
+    display: block;
+  }
+  nav div{
+    flex-direction: column;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  }
