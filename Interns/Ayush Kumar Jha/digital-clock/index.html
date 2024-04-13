@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #212129;
+            color:#fff;
+            transition: background-color 1s ease; 
+        }
+        .center{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #clock{
+            font-size: 40px;
+            background-color: orange;
+            padding: 30px 50px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+        #banner span{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center">
+        <h1>Digital Clock !</h1>
+        <div id="banner"><span>Your Local Time</span></div>
+        <div id="clock"></div>
+    </div>
+    <script>
+        const clock = document.getElementById('clock');
+        const body = document.body;
+
+        setInterval(function(){
+            let date = new Date();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+
+            let timeStr = hours % 12 + ':' + minutes + ':' + seconds + (hours >= 12 ? ' PM' : ' AM');
+            
+            clock.innerHTML = timeStr;
+
+            if (hours >= 6 && hours < 12) {
+                body.style.backgroundColor = '#FFC933'; // Morning
+            } else if (hours >= 12 && hours < 18) {
+                body.style.backgroundColor = '#E58833'; // Afternoon
+            } else if (hours >= 18 && hours < 22) {
+                body.style.backgroundColor = '#FF5722'; // Evening
+            } else {
+                body.style.backgroundColor = '#B233E5'; // Night
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

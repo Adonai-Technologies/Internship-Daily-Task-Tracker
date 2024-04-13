@@ -1,0 +1,440 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+header nav.navbar.navbar.navbar-expand-lg.navbar-light.bg-light {
+    background: transparent !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 30px !important;
+}
+
+
+section.banner {
+    background: url(../images/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 713px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.banner-text h1 {
+    font-size: 63px;
+    color: #FFF;
+    font-weight: 600;
+    /* line-height: 74px; */
+}
+
+.banner-text {
+    max-width: 498px;
+}
+
+.banner-text p {
+    color: #FFF;
+    margin: 42px 0px;
+}
+
+
+.btn {
+    padding: 11px 24px;
+    min-width: 180px;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+    background: #dd3121 !important;
+    border-color: #9b2a20 !important;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+section.chef-section {
+    background: url(images/chef-bg.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+h2.title {
+    font-size: 50px;
+    font-weight: 600;
+    color: #dd3121;
+}
+
+.intro p {
+    font-size: 22px;
+    color: #f64b3c;
+
+}
+
+.intro {
+    max-width: 650px;
+    margin: 0px auto;
+}
+
+.chef-media img {
+    border-radius: 50%;
+}
+
+.chef-info {
+    color: #f64b3c;
+    margin-top: 30px;
+}
+
+.chef-info h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+section.shop {
+    background: #f64b3c;
+    padding: 100px 0px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.btn-white {
+    background: #FFF;
+    color: #f64b3c;
+}
+
+.shop-text {
+    color: #FFF;
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.shop-text p {
+    margin: 30px 0px 50px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.primary {
+    color: #f64b3c;
+}
+
+section.order {
+    background: url(images/product-bg.jpg);
+    background-size: cover;
+    padding: 100px 0px;
+}
+
+.order-text {
+    max-width: 500px;
+}
+
+.order-text p {
+    margin: 38px 0;
+}
+
+
+section.stats {
+    background: #f64b3c;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0px;
+}
+
+section.stats h2,
+section.stats p {
+    color: #fff;
+}
+
+.stats-box {
+    width: 270px;
+    height: 270px;
+    border: 5px solid white;
+    padding: 80px 0px;
+    border-radius: 50%;
+}
+
+.stats-box h3 {
+    font-size: 71px;
+    font-weight: 700;
+    margin-bottom: 0;
+    line-height: 66px;
+}
+
+.stats-box p {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+section.pricing {
+    background: url(images/package-bg.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.price-box {
+    background: #fff;
+    padding: 40px;
+    max-width: 346px;
+    margin: 0px auto;
+    color: #f64b3c;
+}
+
+.price-box h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.price-box h4 {
+    font-weight: 700;
+}
+
+.price-box p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 20px;
+}
+
+section.testimonial {
+    background: url(images/testimonila-bg.jpg);
+    background-size: cover;
+    padding: 100px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+section.testimonial h2 {
+    color: #fff;
+}
+
+.review {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.review p {
+    font-size: 27px;
+}
+
+.review h3 {
+    font-weight: 700;
+}
+
+
+section.newsletter {
+    padding: 100px 0px;
+    background: url(images/newsletter-bg.jpg);
+    background-size: cover;
+}
+
+.form-col {
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.form-col .form-group {
+    width: 100%;
+}
+
+.form-col button.btn.btn-primary {
+    position: absolute;
+    top: 0;
+    right: -18px;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 50px;
+    padding-right: 186px;
+}
+
+footer {
+    background: #141212;
+    padding: 100px 0;
+    color: #fff;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul {
+    padding: 0;
+}
+
+.social ul {
+    margin: 0;
+    padding: 0;
+}
+
+.social ul li {
+    display: inline-block;
+}
+
+.social ul li a {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+}
+
+@media (max-width:991px) {
+    .navbar-light .navbar-toggler {
+        background: #FFF;
+    }
+
+    .navbar-collapse {
+        background: #f64b3c;
+        padding: 20px 20px;
+    }
+
+    .navbar-nav .nav-link {
+        margin: 13px 0px;
+    }
+
+    .btn {
+        min-width: 120px;
+        font-size: 12px;
+    }
+
+    .stats-box {
+        width: 200px;
+        height: 200px;
+        padding: 40px 20px;
+    }
+
+    .stats-box h3 {
+        font-size: 51px;
+    }
+
+    .stats-box p {
+        font-size: 17px;
+    }
+
+    .review-box p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:767px) {
+    .banner-text h1 {
+        font-size: 37px;
+        line-height: 46px;
+        max-width: 280px;
+        margin: 0px auto;
+    }
+
+    .banner-text {
+        text-align: center;
+    }
+
+    .banner-text p {
+        margin: 29px 0px;
+    }
+
+    section.banner {
+        min-height: auto;
+        padding: 171px 0px 69px;
+    }
+
+    .chef-box {
+        margin-bottom: 30px;
+    }
+
+    section.chef-section {
+        padding: 50px 0px 20px;
+    }
+
+    section.shop {
+        padding: 50px 0px 20px;
+    }
+
+    .shop-text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .shop-text p {
+        margin: 10px 0px 20px;
+    }
+
+
+
+    .order-text {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .order-text p {
+        margin: 10px 0px 18px;
+    }
+
+
+    section.stats {
+        padding: 50px 0px 30px;
+    }
+
+    .stats-box {
+        margin: 0px auto 30px;
+    }
+
+    section.pricing {
+        padding: 50px 0px 30px;
+    }
+
+    .price-box {
+        margin-bottom: 30px;
+    }
+
+    section.testimonial {
+        padding: 50px 0px 50px;
+    }
+
+
+    section.newsletter {
+        padding: 50px 0px 50px;
+    }
+
+
+    footer {
+        padding: 50px 0px 30px;
+    }
+
+    .footer-col {
+        margin-bottom: 30px;
+    }
+
+}
